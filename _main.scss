@@ -57,7 +57,7 @@ button {
     transform: translateX(100%) rotate(180deg);
   }
 
-  &.show{
+  &:hover{
     color: hsla(0, 0, 100%, 0.2);
     transition: 0.2s;
   }

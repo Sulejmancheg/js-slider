@@ -23,23 +23,6 @@ for (const buttonsKey in buttons) {
             changeImage(buttonsKey);
         };
 
-        buttons[buttonsKey].onmousemove = function (event){
-            document.querySelectorAll('button').forEach((value) => {
-                value.className = 'show';
-            });
-            if (event.movementX === 0 && event.movementY === 0){
-                document.querySelectorAll('button').forEach((value) => {
-                    value.removeAttribute('class');
-                });
-            }
-        };
-
-        buttons[buttonsKey].onmouseleave = function (){
-            document.querySelectorAll('button').forEach((value) => {
-                value.removeAttribute('class');
-            });
-        }
-
     }
 }
 
